@@ -6,7 +6,7 @@ Very similar to the GNU Coding Standards written by Richard Stallman and other G
  * ✅ C/C++
  * ✅ Java
 
-## Indent code using Allman style ✅
+## ✅ Indent code using Allman style
 https://en.wikipedia.org/wiki/Indentation_style#Allman_style
 
  * Code is indented using Allman Style — opening curly brace brackets are on new
