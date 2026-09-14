@@ -1,5 +1,5 @@
-# Salesforce-Coding-Standards
-Very similar to the GNU Coding Standards written by Richard Stallman and other GNU Project volunteers.
+# Salesforce-Coding-Standards 👨‍💻✏️📐
+Very similar to the GNU Coding Standards written by Richard Stallman and other GNU Project volunteers 🐃
 
 ## Can be used for:
  * ✅ Salesforce Apex Classes and Triggers
