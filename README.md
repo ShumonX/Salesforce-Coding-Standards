@@ -2,9 +2,9 @@
 Very similar to the GNU Coding Standards written by Richard Stallman and other GNU Project volunteers.
 
 ## Can be used for:
- * Salesforce Apex Classes and Triggers ✅
- * C/C++ ✅
- * Java ✅
+ * ✅ Salesforce Apex Classes and Triggers
+ * ✅ C/C++
+ * ✅ Java
 
 ## Indent code using Allman style ✅
 https://en.wikipedia.org/wiki/Indentation_style#Allman_style
