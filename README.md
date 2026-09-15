@@ -29,9 +29,9 @@ comments should always contain at least 1 emoji
 use spaces
 
 
-# Rule 2: Reduce Nesting/Indentation and Exit Early: 🪺
+# Rule 2: Reduce Nesting (🪺) / Indentation and Exit Early (🚪🔚):
 
-## Do this. Reaches 2 levels of nesting/indentation: ✅🪺
+## Do this (✅). Reaches 2 levels of nesting (🪺🪺) / indentation:
 
 ### Reaches 2 levels of nesting: 🪺
 
@@ -75,9 +75,9 @@ switch on Trigger.operationType
 }
 ```
 
-## Not this. Reaches 3 levels of nesting/indentation. And literally indents almost the entire content of the Trigger inside an IF: ⛔🚫
+## Not this (⛔🚫). Reaches 3 levels of nesting/indentation. And literally indents almost the entire content of the Trigger inside an IF:
 
-### Reaches 3 levels of nesting: 🪺
+### Reaches 3 levels of nesting (🪺🪺🪺):
 
 ```Apex
 if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
