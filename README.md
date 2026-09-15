@@ -27,3 +27,93 @@ https://en.wikipedia.org/wiki/Indentation_style#Allman_style
 comments should always contain at least 1 emoji
 
 use spaces
+
+
+# Rule 2: Reduce Nesting/Indentation and Exit Early: 🪺
+
+## Do this. Reaches 2 levels of nesting/indentation: ✅🪺
+
+### Reaches 2 levels of nesting: 🪺
+
+```Apex
+if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c == false)
+{
+    return;
+}
+
+TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
+switch on Trigger.operationType
+{
+    when BEFORE_INSERT
+    {
+        handler.beforeInsert(Trigger.new);
+    }
+    when BEFORE_UPDATE
+    {
+        handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
+    }
+    when BEFORE_DELETE
+    {
+        handler.beforeDelete(Trigger.old, Trigger.oldMap);
+    }
+    when AFTER_INSERT
+    {
+        handler.afterInsert(Trigger.new, Trigger.newMap);
+    }
+    when AFTER_UPDATE
+    {
+        handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
+    }
+    when AFTER_DELETE
+    {
+        handler.afterDelete(Trigger.old, Trigger.oldMap);
+    }
+    when AFTER_UNDELETE
+    {
+        handler.afterUndelete(Trigger.new, Trigger.newMap);
+    }
+}
+```
+
+## Not this. Reaches 3 levels of nesting/indentation. And literally indents almost the entire content of the Trigger inside an IF: ⛔🚫
+
+### Reaches 3 levels of nesting: 🪺
+
+```Apex
+if (Org_Specific_Custom_Setting__c.getInstance()?.Run_All_Triggers__c ?? true)
+{
+    TriggerHandler handler = new AccountTriggerHandler(Trigger.isExecuting, Trigger.size);
+    switch on Trigger.operationType
+    {
+        when BEFORE_INSERT
+        {
+            handler.beforeInsert(Trigger.new);
+        }
+        when BEFORE_UPDATE
+        {
+            handler.beforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
+        }
+        when BEFORE_DELETE
+        {
+            handler.beforeDelete(Trigger.old, Trigger.oldMap);
+        }
+        when AFTER_INSERT
+        {
+            Handler.afterInsert(Trigger.new, Trigger.newMap);
+        }
+        when AFTER_UPDATE
+        {
+            handler.afterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
+        }
+        when AFTER_DELETE
+        {
+            handler.afterDelete(Trigger.old, Trigger.oldMap);
+        }
+        when AFTER_UNDELETE
+        {
+            handler.afterUndelete(Trigger.new, Trigger.newMap);
+        }
+    }
+}
+
+
