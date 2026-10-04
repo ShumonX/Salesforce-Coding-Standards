@@ -1,7 +1,13 @@
 # Salesforce-Coding-Standards 👨‍💻✏️📐
 Very similar to the GNU Coding Standards written by Richard Stallman and other GNU Project volunteers 🐃
 
-<img width="120" height="118" alt="image" src="https://github.com/user-attachments/assets/272b1174-d713-40c3-a11a-b2794d2bd3c5" />
+<img
+    width  ="120"
+    height ="118"
+    alt    ="Heckert_GNU"
+    src    = "https://github.com/user-attachments/assets/272b1174-d713-40c3-a11a-b2794d2bd3c5"
+    title  = "Heckert_GNU"
+/>
 
 ## Can be used by both A.I. 🤖 or humans 👨🏻‍💻 for coding …
  * ✅ Salesforce Apex Classes and Triggers
