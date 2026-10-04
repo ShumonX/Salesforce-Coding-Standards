@@ -1,7 +1,9 @@
 # Salesforce-Coding-Standards 👨‍💻✏️📐
 Very similar to the GNU Coding Standards written by Richard Stallman and other GNU Project volunteers 🐃
 
-## Can be used by both AI or humans for coding …
+![Alt Text](https://thumb.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/120px-Heckert_GNU_white.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)
+
+## Can be used by both A.I. 🤖 or humans 👨🏻‍💻 for coding …
  * ✅ Salesforce Apex Classes and Triggers
  * ✅ C/C++
  * ✅ Java
